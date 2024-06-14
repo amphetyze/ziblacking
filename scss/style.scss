@@ -109,7 +109,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    overflow: clip;
+    // overflow: clip;
+    margin-top: 100px;
+    margin-bottom: 150px;
 
     // border: 5px solid red;
 
@@ -248,8 +250,8 @@
         width: fit-content;
 
         video {
-            width: 260px;
-            height: 560px;
+            max-width: 290px;
+            height: 620px;
             position: absolute;
             left: 50%;
             top: 50%;
@@ -259,12 +261,16 @@
         }
     }
 
-    &__phone-image {}
+    &__phone-image {
+        width: 320px;
+    }
 
     &__monkey-image {
         position: absolute;
-        bottom: -90px;
-        right: -190px;
+        max-width: 750px;
+        width: 100%;
+        bottom: -220px;
+        right: -290px;
     }
 
     &__running-line {
