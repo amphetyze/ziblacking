@@ -514,6 +514,8 @@ body {
     }
 
     .hero {
+        height: 150vh;
+
         &__container {
             display: flex;
             flex-direction: column;
@@ -571,12 +573,18 @@ body {
         }
 
         &__right {
-            display: none;
+            // display: none;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 100%;
         }
 
         &__phone {
             position: relative;
             width: fit-content;
+            margin: 0 auto;
+            margin-top: 50px;
 
             video {
                 max-width: 290px;
@@ -600,19 +608,27 @@ body {
             width: 100%;
             bottom: -220px;
             right: -320px;
+            display: none;
         }
 
         &__running-line {
             gap: 20px;
+            bottom: -400px;
         }
 
         &__running-text {
             font-size: 20px;
         }
+
+        &__moon-image {
+            bottom: -325px;
+        }
     }
 
 
     .about {
+        margin-top: -100px;
+
         &__text-container {
 
             font-size: 22px;

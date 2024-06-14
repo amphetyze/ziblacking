@@ -811,6 +811,9 @@ body {
   .section__container {
     padding: 0px 15px;
   }
+  .hero {
+    height: 150vh;
+  }
   .hero__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -877,13 +880,22 @@ body {
             transform: scale(0.9);
   }
   .hero__right {
-    display: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
   }
   .hero__phone {
     position: relative;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    margin: 0 auto;
+    margin-top: 50px;
   }
   .hero__phone video {
     max-width: 290px;
@@ -906,12 +918,20 @@ body {
     width: 100%;
     bottom: -220px;
     right: -320px;
+    display: none;
   }
   .hero__running-line {
     gap: 20px;
+    bottom: -400px;
   }
   .hero__running-text {
     font-size: 20px;
+  }
+  .hero__moon-image {
+    bottom: -325px;
+  }
+  .about {
+    margin-top: -100px;
   }
   .about__text-container {
     font-size: 22px;
