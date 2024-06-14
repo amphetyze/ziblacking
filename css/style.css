@@ -315,6 +315,24 @@ body {
   position: relative;
   z-index: 2;
 }
+.hero__phone {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hero__phone video {
+  width: 260px;
+  height: 560px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #000;
+  border-radius: 30px;
+}
 .hero__monkey-image {
   position: absolute;
   bottom: -90px;
